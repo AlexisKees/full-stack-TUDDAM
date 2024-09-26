@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+    background-color: #f4f4f9;
+}
+
+
+header {    
+    display: flex;
+    justify-content: center;
+}
+
+nav {    
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 70svh;
+}
+
+#contenedor-botones{
+    background-color: white;
+    padding: 1em;
+    border: none;
+    width: min-content;
+    margin: auto;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+button {
+    width: 10em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    color: rgb(243, 255, 255);
+    border:none
+
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: #0056b3;
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://localhost:3000/inicio"><button>Inicio</button></a>
+            <a href="http://localhost:3000/datos"><button>datos</button></a>
+            <a href="http://localhost:3000/saludo"><button>saludo</button></a>
+            <a href="http://localhost:3000/hora"><button>hora</button></a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="contenedor" id="contenedor-botones">
+            <div class="contenedor">
+                <a href="http://localhost:3000/datos"><button>datos</button></a>
+            </div>
+            <div class="contenedor">
+                <a href="http://localhost:3000/saludo"><button>saludo</button></a>
+            </div>
+            <div class="contenedor">
+                <a href="http://localhost:3000/hora"><button>hora</button></a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
